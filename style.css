@@ -1,0 +1,142 @@
+:root {
+    --bg: #1e241d;
+    --card: #2b2b2b;
+    --text: #ffffff;
+    --accent: #75ff69;
+    --inputbg: #3a4139;
+    --border: #1a1a1a;
+    --radius: 6px;
+
+    --gold: #ffd700;
+    --silver: #c0c0c0;
+    --bronze: #cd7f32;
+
+    --font-sm: 13px;
+}
+
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: var(--font-sm);
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 20px;
+    color: var(--accent);
+}
+
+.card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px #00000030;
+}
+
+.card h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--accent);
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 8px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 3px;
+    background-color: var(--inputbg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: var(--font-sm);
+}
+
+textarea {
+    resize: vertical;
+
+}
+
+button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: var(--accent);
+    border: none;
+    border-radius: var(--radius);
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4aaf4a;
+}
+
+.inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-sm);
+    text-align: center;
+    margin-top: 10px;
+}
+
+caption {
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--accent);
+}
+
+th, td {
+    padding: 6px;
+    border: 1px solid var(--border);
+}
+
+.ouro {
+    background-color: var(--gold);
+    color: #000;
+}
+
+.prata {
+    background-color: var(--silver);
+    color: #000;
+}
+
+.bronze {
+    background-color: var(--bronze);
+    color: #fff;
+}
+
+.total {
+    background-color: #363636;
+    font-weight: bold;
+    color: var(--accent);
+}
